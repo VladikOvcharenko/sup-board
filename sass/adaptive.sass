@@ -1,0 +1,264 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1170px)
+
+	.header
+		background-position: center
+		&__decor-text-two
+			left: 65px
+
+	.info__top
+		gap: 84px
+		margin-bottom: 45vh
+
+	.buy
+		padding: 75px 0 0
+		&__wrapper
+			flex-wrap: wrap
+			justify-content: center
+
+	.gallery__box
+		flex-wrap: wrap
+	.gallery-min
+		margin: 0 auto
+		margin-bottom: 50px
+	.gallery-max 
+		grid-template-columns: 1fr 2fr 1fr
+		grid-template-rows: auto auto auto
+		img
+			width: 100%
+			align-self: stretch
+
+	/**/ 
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.info
+		&__top
+			gap: 84px
+			margin-bottom: 15vh
+			display: block
+			&-text
+				width: 100%
+				font-size: 16px
+			&-img
+				width: 227px
+				margin: 0 auto
+				display: block
+		&_specs	
+			gap: 50px
+			h3
+				font-size: 40px
+			&-list 
+				max-width: 565px
+			&--item
+				p
+					font-size: 16px
+		&__btn
+			bottom: -160px
+			right: 90px
+			z-index: 10
+
+	.gallery-min
+		gap: 25px
+		grid-template-columns: 2fr 1fr
+		grid-template-rows: auto auto
+		padding: 52px 22px 32px
+		&__img
+			width: 100%
+			align-self: stretch
+
+	.micro__btn 
+		right: 88px
+
+
+	.footer
+		&__top
+			flex-direction: column
+			align-items: center
+			text-align: center
+		&__logo
+			order: -1
+			margin-bottom: 50px
+
+		&_menu-item
+			a
+				font-size: 16px
+		&__social-title
+			text-align: center
+		/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header	
+		&__top
+			gap: 60px
+			font-size: 18px
+		&__btn
+			padding: 12px 47px
+
+	.info
+		&__top
+			gap: 84px
+			margin-bottom: 15vh
+		&__specs	
+			display: block
+			padding: 25px	0	
+			h3
+				padding-bottom: 20px
+			&-list 
+				margin-bottom: 0px
+				padding: 30px 0
+			&--item		
+				padding-top: 10px
+
+	.gallery-min
+		margin-bottom: 50px
+		gap: 20px
+		padding: 32px 20px 24px
+		&::before
+			border-radius: 200px 0px 200px 0px
+	.gallery-max__text
+		p
+			font-size: 22px
+			padding: 66px 30px
+			border-radius: 0px 0px 0px 150px
+	
+	.footer__menu
+		display: block
+		text-align: center
+	.footer_menu-item
+		padding: 10px 0
+
+	.footer__gallery
+		margin-bottom: 30px
+		gap: 20px
+		grid-template-columns: repeat(2, 1fr)
+		img
+			width: 100%
+			align-self: stretch	
+
+
+
+
+	
+	/**/
+
+
+@media only screen and (max-width : 615px)
+	.header__decor-text
+		display: none	
+	.header	
+		&__top
+			flex-wrap: wrap
+			justify-content: center
+			gap: 45px
+		&__btn
+			width: 70%
+
+	.info
+		&__top
+			gap: 84px
+			margin-bottom: 5vh
+		&__specs	
+			h3
+				font-size: 22px
+			&--item
+				gap: 0px
+				p
+					font-size: 12px
+		&__btn
+			bottom: -175px
+			right: 90px
+
+	.buy
+		&__content
+			max-width: 510px	
+		&__title
+			font-size: 50px
+			margin-bottom: 30px		
+		&__item-title
+			font-size: 22px
+		&__item-text
+			font-size: 16px
+		&__price
+			width: 170px
+			height: 170px
+			font-size: 28px
+		&__btn
+			font-size: 24px
+
+	.micro__title
+		h3
+			font-size: 45px
+	.micro__list-item
+		font-size: 18px
+
+	.gallery-min
+		gap: 15px
+		padding: 22px 14px 18px
+		&::before
+			border-radius: 200px 0px 180px 0px 
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+	.header__content
+		min-height: calc(75vh - 160px)
+		&-box
+			margin-right: 0
+			h1
+				font-size: 50px
+				margin-bottom: 10px
+			p
+				font-size: 18px
+				margin-bottom: 10px		
+	.info__specs			
+		h3
+			font-size: 22px
+		&--item
+			display: block
+			gap: 0px
+			p
+				font-size: 14px
+	.buy
+		&__title
+			font-size: 40px
+		&__price
+			bottom: -350px
+			width: 125px
+			height: 125px
+			font-size: 22px
+		&__btn
+			font-size: 20px
+
+	.micro__title
+		h3
+			font-size: 35px
+	.micro__list-item
+		font-size: 16px
+
+	.gallery-min
+		gap: 10px
+		padding: 15px 10px 12px
+		&::before
+			border-radius: 150px 0px 150px 0px 
+
+	.footer__form-title
+		font-size: 38px
+
+			
+
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/

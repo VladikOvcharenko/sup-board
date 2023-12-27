@@ -1,2 +1,2 @@
 # Учебный проект
-simple responsive anding 
+simple responsive landing 
